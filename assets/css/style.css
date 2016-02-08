@@ -1,0 +1,9 @@
+.page-content {
+  margin-top: 100px;
+}
+
+.artist-row {
+  border-bottom: 1px solid #aaa;
+  padding: 20px;
+  margin-top: 20px;
+}
