@@ -7,8 +7,8 @@
 
     <style type="text/css">
         #jumbo {
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url('assets/img/header.png') no-repeat center;
+            background: linear-gradient(rgba(105,210,231, 0.6), rgba(105,210,231, 0.6)),
+                url('assets/img/header.jpg') no-repeat center;
             background-size: cover;
             height: 700px;
             color: #eee;
@@ -30,6 +30,7 @@
 
         #jumbo h4 {
             font-size: 16px;
+            color: white;
         }
 
         #landing_content {
@@ -40,27 +41,40 @@
             border: 20px solid white;
         }
 
-        .artist-box {
-            border-bottom: 1px solid #002354;
-            margin-bottom: 20px;
-            padding: 20px;
-            text-align: center;
+        .artist-name, .artist-rank, .artist-score {
+            font-size: 25px;
         }
 
-        .artists {
-            font-size: 30px;
+        .artist-score {
+            color: #F38630;
         }
 
-        .artist-number {
-            font-size: 50px;
+        .read-more {
+            color: #F38630;
+            text-shadow: 1px 1px #333;
         }
 
-        .artista-header {
-            text-align: center;
-            background-color: #777;
-            color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
+        .artista-box {
+            /*border: 1px solid black;*/
+            padding: 10px;
+        }
+
+        .artista-row:nth-child(odd) {
+            background: #eee;
+        }
+
+        .ranking-box {
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        .ranking-header {
+            background-color: #E0E4CC;
+            padding: 10px;
+        }
+
+        .loveteam-ranking {
+            /*border-left: 1px solid black;*/
         }
 
         footer {
@@ -72,10 +86,11 @@
 
         #short_description {
             padding-top: 50px;
-            padding-bottom: 50px;
+            padding-bottom: 10px;
             padding-left: 150px;
             padding-right: 150px;
             font-size: 18px;
+            border-bottom: 10px solid #69D2E7;
         }
 
         #short_description p {
@@ -89,19 +104,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1>ARTISTA RANK</h1>
+                    <img src="assets/img/rankd_logo.png" width="200px">
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 text-center">
                     <div id="landing_content">
-                        <h2>SHOWBIZ WITHOUT CHISMIS</h2>
-                        <h3>Data-Driven Show Business</h3>
+                        <h2>One liner pitch here</h2>
+                        <h3>Secondary pitch here</h3>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 text-center">
+                <div class="col-xs-12 text-center read-more">
                     <h4>READ MORE</h4>
                     <i class="fa fa-arrow-down fa-5x"></i>
                 </div>
@@ -113,126 +128,305 @@
         <div class="row">
             <div class="col-xs-12">
                 <div id="short_description">
-                    <h2>Artista Rank Short Pitch or Description here</h2>
-                    <p>Dummy text starts here. At nako, alam mo ba, ang Shamcey Supsup ay chinuk-chak-cheness ng kanyang bubukesh! Awaaaard! At nako, alam mo ba, ang chuchu ay ipinaalam ng iyong bunso. Kung ako sayo, mother, ang hitad ay sinama ng aking eklavoo! O ano, ang lupa ay nilunod ng kanyang mudra.</p>
+                    <h2 style="color: #FA6900;">Rankd Personalities Analytics</h2>
+                    <p>Rankd Personalities Analytics provides score and rankings for different personalities and popular people. Rankd aggregates online news and social media virality in Facebook, Twitter, and Instagram to provide each personality a "Rankd Score".</p>
 
-                    <p>At in fairview, ang tinik ay sinakay ng iyong chuchu! At nako, alam mo ba, ang pamahalaan ay umapear ng ating vaklush. Ditey sa balur, ang hitad ay sinakay ng ating bunso. Nako, ang lulubelles ay chinuk-chak-cheness ng kanyang kyota.</p>
+                    <p><strong>Rankd Score</strong> algorithm is used to generate analysis from the most read news sources online &amp; popular social media, analyze thousands of comments, then combining them with different weights and come up with a score to rank the popularity of a personality.</p>
 
-                    <p>See the rankings below.</p>
+                    <p>A sample of the rankings can be seen below.</p>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid artista-header">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <h4>January</h4>
-                <h2>Artista ranking</h2>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-xs-offset-3 col-xs-6">
-                <div class="row artist-box">
-                    <div class="col-xs-1">
-                        <span class="artist-number">1</span>
+            <div class="col-xs-6 text-center">
+                <div class="ranking-box">
+                    <div class="ranking-header">
+                        <h2>Artista Ranking</h2>
                     </div>
-                    <div class="col-xs-10">
-                        
-                        <span class="artists">Pia Wurtzbach</span>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <strong>Rank</strong>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <strong>Artist</strong>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <strong>Rankd Score</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">1</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">Pia Wurtzbach</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">55</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">2</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">Liza Soberano</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">51</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">3</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">Vic Sotto</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">42</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">4</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">Coco Martin</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">39</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">5</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">Vice Ganda</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">38</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">6</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">Alden Richards</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">32</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">7</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">Maine Mendoza</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">27</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">8</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">John Lloyd Cruz</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">27</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">9</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">Bea Alonzo</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">24</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">10</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">Enrique Gil</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">22</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            
-                <div class="row artist-box">
-                    <div class="col-xs-1">
-                        <span class="artist-number">2</span>
+            </div>
+
+            <div class="col-xs-6 text-center">
+                <div class="ranking-box loveteam-ranking">
+                    <div class="ranking-header">
+                        <h2>Love Team Ranking</h2>
                     </div>
-                    <div class="col-xs-10">
-                        
-                        <span class="artists">Liza Soberano</span>
-                    </div>
-                </div>
-            
-                <div class="row artist-box">
-                    <div class="col-xs-1">
-                        <span class="artist-number">3</span>
-                    </div>
-                    <div class="col-xs-10">
-                        
-                        <span class="artists">Vic Sotto</span>
-                    </div>
-                </div>
-            
-                <div class="row artist-box">
-                    <div class="col-xs-1">
-                        <span class="artist-number">4</span>
-                    </div>
-                    <div class="col-xs-10">
-                        
-                        <span class="artists">Coco Martin</span>
-                    </div>
-                </div>
-            
-                <div class="row artist-box">
-                    <div class="col-xs-1">
-                        <span class="artist-number">5</span>
-                    </div>
-                    <div class="col-xs-10">
-                        
-                        <span class="artists">Vice Ganda</span>
-                    </div>
-                </div>
-            
-                <div class="row artist-box">
-                    <div class="col-xs-1">
-                        <span class="artist-number">6</span>
-                    </div>
-                    <div class="col-xs-10">
-                        
-                        <span class="artists">Alden Richards</span>
-                    </div>
-                </div>
-            
-                <div class="row artist-box">
-                    <div class="col-xs-1">
-                        <span class="artist-number">7</span>
-                    </div>
-                    <div class="col-xs-10">
-                        
-                        <span class="artists">Maine Mendoza</span>
-                    </div>
-                </div>
-            
-                <div class="row artist-box">
-                    <div class="col-xs-1">
-                        <span class="artist-number">8</span>
-                    </div>
-                    <div class="col-xs-10">
-                        
-                        <span class="artists">John Lloyd Cruz</span>
-                    </div>
-                </div>
-            
-                <div class="row artist-box">
-                    <div class="col-xs-1">
-                        <span class="artist-number">9</span>
-                    </div>
-                    <div class="col-xs-10">
-                        
-                        <span class="artists">Bea Alonzo</span>
-                    </div>
-                </div>
-            
-                <div class="row artist-box">
-                    <div class="col-xs-1">
-                        <span class="artist-number">10</span>
-                    </div>
-                    <div class="col-xs-10">
-                        
-                        <span class="artists">Enrique Gil</span>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <strong>Rank</strong>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <strong>Artist</strong>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <strong>Rankd Score</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">1</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">AlDub</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">48</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">2</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">LizQuen</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">36</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">3</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">KathNiel</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">29</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">4</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">JaDine</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">26</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">5</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">JLC/Bea</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">12</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 artista-row">
+                            <div class="artista-box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span class="artist-rank">6</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="artist-name">DongYan</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="artist-score">4</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
