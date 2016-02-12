@@ -7,7 +7,7 @@
 
     <style type="text/css">
         #jumbo {
-            background: linear-gradient(rgba(105,210,231, 0.6), rgba(105,210,231, 0.6)),
+            background: linear-gradient(rgba(105,210,231, 0.4), rgba(105,210,231, 0.4)),
                 url('assets/img/header.jpg') no-repeat center;
             background-size: cover;
             height: 700px;
@@ -37,8 +37,8 @@
             margin-top: 100px;
             margin-bottom: 100px;
             padding: 50px;
-            text-shadow: 1px 1px #333;
-            border: 20px solid white;
+            text-shadow: 2px 2px 2px #333;
+            /*border: 20px solid white;*/
         }
 
         .artist-name, .artist-rank, .artist-score {
@@ -51,7 +51,7 @@
 
         .read-more {
             color: #F38630;
-            text-shadow: 1px 1px #333;
+            text-shadow: 2px 2px 2px #333;
         }
 
         .artista-box {
@@ -66,6 +66,7 @@
         .ranking-box {
             padding: 25px;
             margin-top: 20px;
+            color: #555;
         }
 
         .ranking-header {
@@ -78,7 +79,7 @@
         }
 
         footer {
-            background-color: #777;
+            background-color: #F38630;
             padding: 20px;
             margin-top: 20px;
             color: white;
@@ -90,12 +91,33 @@
             padding-left: 150px;
             padding-right: 150px;
             font-size: 18px;
-            border-bottom: 10px solid #69D2E7;
+            border-bottom: 5px solid #69D2E7;
+            color: #555;
         }
 
         #short_description p {
             margin-bottom: 30px;
             line-height: 40px;
+        }
+
+        .offer-section {
+            background-color: #A7DBD8;
+        }
+
+        .offer-box {
+            padding: 20px;
+            color: #F38630;
+        }
+
+        .offer-box ul {
+            font-size: 20px;
+            list-style-type: none;
+            color: #555;
+        }
+
+        .offer-box ul > li {
+            margin-top: 40px;
+            margin-bottom: 40px;
         }
     </style>
 </head>
@@ -110,15 +132,15 @@
             <div class="row">
                 <div class="col-xs-12 text-center">
                     <div id="landing_content">
-                        <h2>One liner pitch here</h2>
-                        <h3>Secondary pitch here</h3>
+                        <h2>Analytics for personalities and popular people.</h2>
+                        <h3>Scores and rankings based on news and social media</h3>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 text-center read-more">
                     <h4>READ MORE</h4>
-                    <i class="fa fa-arrow-down fa-5x"></i>
+                    <i class="fa fa-chevron-circle-down fa-5x"></i>
                 </div>
             </div>
         </div>
@@ -131,9 +153,9 @@
                     <h2 style="color: #FA6900;">Rankd Personalities Analytics</h2>
                     <p>Rankd Personalities Analytics provides score and rankings for different personalities and popular people. Rankd aggregates online news and social media virality in Facebook, Twitter, and Instagram to provide each personality a "Rankd Score".</p>
 
-                    <p><strong>Rankd Score</strong> algorithm is used to generate analysis from the most read news sources online &amp; popular social media, analyze thousands of comments, then combining them with different weights and come up with a score to rank the popularity of a personality.</p>
+                    <p><strong>Rankd Score</strong> algorithm is used to generate analysis from the most read news sources online &amp; popular social media, analyze thousands of comments. Those features are then combined with different weights to come up with a score to rank the popularity of a personality.</p>
 
-                    <p>A sample of the rankings can be seen below.</p>
+                    <p>A sample of the rankings can be seen below. Rankings is based on actual data.</p>
                 </div>
             </div>
         </div>
@@ -329,7 +351,7 @@
                                         <strong>Rank</strong>
                                     </div>
                                     <div class="col-xs-8">
-                                        <strong>Artist</strong>
+                                        <strong>Love Team</strong>
                                     </div>
                                     <div class="col-xs-2">
                                         <strong>Rankd Score</strong>
@@ -433,10 +455,28 @@
         </div>
     </div>
 
+    <div class="container-fluid offer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <div class="offer-box">
+                        <h2>What Rankd can provide</h2>
+                        <ul>
+                            <li>Daily updates on your Rankd position</li>
+                            <li>Deeper data insights with comparison to competition</li>
+                            <li>Prediction using Rankd predictive analytics based on past trends (coming soon)</li>
+                            <li>Understand more using Rankd sentiment analysis (coming soon)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid">
         <div class="row">
             <footer class="col-xs-12">
-                &copy; 2016 Artista Rank - Data-Driven Show Business
+                &copy; 2016 Rankd Personalities Analytics
             </footer>
         </div>
     </div>
