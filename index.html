@@ -4,173 +4,40 @@
     <link rel="stylesheet" href="assets/fonts/lato/fontface.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome-4.3.0/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-
-    <style type="text/css">
-        a {
-            color: #69D2E7;
-        }
-
-        a:hover {
-            color: #A7DBD8;
-        }
-
-        #jumbo {
-            background: linear-gradient(rgba(105,210,231, 0.4), rgba(105,210,231, 0.4)),
-                url('assets/img/header.jpg') no-repeat center;
-            background-size: cover;
-            height: 700px;
-            color: #eee;
-            padding-top: 10px;
-        }
-
-        #jumbo h1 {
-            font-size: 24px;
-        }
-
-        #jumbo h2 {
-            font-size: 40px;
-        }
-
-        #jumbo h3 {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        #jumbo h4 {
-            font-size: 16px;
-            color: white;
-        }
-
-        #landing_content {
-            margin-top: 100px;
-            margin-bottom: 50px;
-            padding: 50px;
-            text-shadow: 2px 2px 2px #333;
-            /*border: 20px solid white;*/
-        }
-
-        .artist-name, .artist-rank, .artist-score {
-            font-size: 25px;
-        }
-
-        .artist-score {
-            color: #F38630;
-        }
-
-        .read-more a {
-            color: #F38630;
-            text-shadow: 2px 2px 2px #333;
-        }
-
-        .artista-box {
-            /*border: 1px solid black;*/
-            padding: 10px;
-        }
-
-        .artista-row:nth-child(odd) {
-            background: #eee;
-        }
-
-        .ranking-box {
-            padding: 25px;
-            margin-top: 20px;
-            color: #555;
-        }
-
-        .ranking-header {
-            background-color: #E0E4CC;
-            padding: 10px;
-        }
-
-        .loveteam-ranking {
-            /*border-left: 1px solid black;*/
-        }
-
-        footer {
-            background-color: #F38630;
-            padding: 20px;
-            margin-top: 20px;
-            color: white;
-        }
-
-        #short_description {
-            padding-top: 50px;
-            padding-bottom: 10px;
-            padding-left: 150px;
-            padding-right: 150px;
-            font-size: 18px;
-            border-bottom: 5px solid #69D2E7;
-            color: #555;
-        }
-
-        #short_description p {
-            margin-bottom: 30px;
-            line-height: 40px;
-        }
-
-        .offer-section {
-            border-top: 5px solid #A7DBD8;
-            margin-top: 30px;
-        }
-
-        .offer-box {
-            padding: 20px;
-            color: #F38630;
-        }
-
-        .offer-box ul {
-            font-size: 20px;
-            list-style-type: none;
-            color: #555;
-        }
-
-        .offer-box ul > li {
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
-
-        #contact-us-button {
-            background-color: #69D2E7;
-            font-size: 20px;
-            color: white;
-            padding: 15px;
-            text-shadow: 1px 1px 1px #333;
-        }
-
-        #contact-us-button:hover {
-            background-color: #A7DBD8;
-            font-size: 20px;
-            color: white;
-            padding: 15px;
-            text-shadow: 1px 1px 1px #333;
-        }
-    </style>
 </head>
 <body>
-    <div class="jumbotron" id="jumbo">
+    <div class="jumbotron jumbo-index" id="jumbo">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-6">
                     <a href="index.html"><img src="assets/img/rankd_logo.png" width="200px"></a>
+                </div>
+                <div class="col-xs-6 text-right">
+                    <ul class="header-links-list">
+                        <li><a href="index.html" class="btn btn-default link-button header-links">Home</a></li>
+                        <li><a href="services.html" class="btn btn-default link-button header-links">Services</a></li>
+                        <li><a href="about.html" class="btn btn-default link-button header-links">About Us</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 text-center">
                     <div id="landing_content">
-                        <h2>Analytics for personalities and popular people</h2>
-                        <h3>Scores and rankings based on news and social media</h3>
+                        <h2>Exceptional analytics ranking for famous personalities and buzzmakers</h2>
+                        <h3>Rankd Score&trade; based on top news and social media</h3>
                         <br><br>
-                        <a class="btn btn-default" href="mailto:rankdnews@gmail.com" id="contact-us-button">Contact us</a>
+                        <a class="btn btn-default link-button" href="mailto:rankdnews@gmail.com">Contact us</a>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 text-center read-more">
-                    <h4>READ MORE</h4>
+                    <h3>Read more</h3>
                     <a href="#short_description"><i class="fa fa-chevron-circle-down fa-5x"></i></a>
                 </div>
             </div>
@@ -182,9 +49,9 @@
             <div class="col-xs-12">
                 <div id="short_description">
                     <h2 style="color: #FA6900;">Rankd Personalities Analytics</h2>
-                    <p>Rankd Personalities Analytics provides score and rankings for different personalities and popular people. Rankd aggregates online news and social media virality in Facebook, Twitter, and Instagram to provide each personality a "Rankd Score".</p>
+                    <p>Rankd Personalities Analytics provides score and rankings for different personalities and popular people. Rankd aggregates online news and social media virality in Facebook, Twitter, and Instagram to provide each personality a Rankd Score&trade; .</p>
 
-                    <p><strong>Rankd Score</strong> algorithm is used to generate analysis from the most read news sources online &amp; popular social media, analyze thousands of comments. Those features are then combined with different weights to come up with a score to rank the popularity of a personality. Interested? <a href="mailto:rankdnews@gmail.com">Contact us!</a></p>
+                    <p><strong>Rankd Score&trade; </strong> algorithm is used to generate analysis from the most read news sources online, popular social media, and thousands of comments. Those features are then combined with different weights to come up with a score to rank the popularity of a personality. Interested? Interested? If our predictions are right, you will contact us at <a href="mailto:rankdnews@gmail.com">rankdnews@gmail.com</a> if you want to get on top of the rank.</p>
 
                     <p>A sample of the rankings can be seen below. Rankings is based on actual data.</p>
                 </div>
@@ -482,25 +349,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container offer-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <div class="offer-box">
-                        <h2>What Rankd can provide</h2>
-                        <ul>
-                            <li>Daily updates on your Rankd position</li>
-                            <li>Deeper data insights with comparison to competition</li>
-                            <li>Prediction using Rankd predictive analytics based on past trends <em>(coming soon)</em></li>
-                            <li>Understand more using Rankd sentiment analysis <em>(coming soon)</em></li>
-                        </ul>
-                        <a class="btn btn-default" href="mailto:rankdnews@gmail.com" id="contact-us-button">Send us an email</a>
                     </div>
                 </div>
             </div>
