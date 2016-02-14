@@ -117,7 +117,7 @@ footer {
     color: white;
 }
 
-#short_description {
+#short_description, .blog-contents {
     padding-top: 50px;
     padding-bottom: 10px;
     padding-left: 150px;
@@ -127,7 +127,12 @@ footer {
     color: #555;
 }
 
-#short_description p {
+.blog-contents {
+    font-size: 16px;
+    text-align: justify;
+}
+
+#short_description p, .blog-contents p {
     margin-bottom: 30px;
     line-height: 40px;
 }
@@ -137,7 +142,7 @@ ul > li {
     margin-bottom: 20px;
 }
 
-.link-button {
+.link-button, .link-button:focus {
     background-color: #69D2E7;
     font-size: 20px;
     color: white;
@@ -151,4 +156,36 @@ ul > li {
     color: white;
     padding: 15px;
     text-shadow: 1px 1px 1px #333;
+}
+
+.header-blog {
+    background-color: #69D2E7;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    #short_description, .blog-contents {
+        padding-top: 50px;
+        padding-bottom: 10px;    
+        padding-left: 10px;
+        padding-right: 10px;
+        /*border-bottom: 5px solid #69D2E7;*/
+        color: #555;
+    }
+
+    .header-links-list li {
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #landing_content {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding: 10px;
+        text-shadow: 2px 2px 2px #333;
+        /*border: 20px solid white;*/
+    }
 }
