@@ -163,8 +163,8 @@ ul > li {
     padding-top: 15px;
 }
 
-@media screen and (max-width: 800px) {
-    #short_description, .blog-contents {
+@media screen and (max-device-width: 800px) {
+    .short_description, .blog-contents {
         padding-top: 50px;
         padding-bottom: 10px;    
         padding-left: 10px;
