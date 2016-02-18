@@ -9,6 +9,7 @@ a:hover {
 .header-links {
     font-size: 17px !important;
     padding: 10px !important;
+    background-color: #F38630 !important;
 }
 
 .header-links-list li {
@@ -25,8 +26,8 @@ a:hover {
 }
 
 .jumbo-index {
-    background: linear-gradient(rgba(105,210,231, 0.4), rgba(105,210,231, 0.4)),
-        url('../img/header-index2.jpg') no-repeat center;
+    background: linear-gradient(rgba(105,210,231, 0.6), rgba(105,210,231, 0.6)),
+        url('../img/header-index2.png') no-repeat center;
 }
 
 .jumbo-services {
